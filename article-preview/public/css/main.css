@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.77rem;
+  min-width: 375px;
+  max-width: 1440px;
+}
+
+body {
+  font-weight: 500;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: hsl(210deg, 46%, 95%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: hsl(217deg, 19%, 35%);
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.card {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.5rem rgb(201, 187, 187);
+  position: relative;
+  width: 340px;
+}
+.card .wrapper img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card .profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.card .profile img {
+  width: 40px;
+  border-radius: 50rem;
+}
+.card .profile h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1rem;
+  font-weight: 700;
+  flex: 1;
+  color: hsl(217deg, 19%, 35%);
+}
+.card .profile h2 span {
+  color: hsl(212deg, 23%, 69%);
+  font-weight: 500;
+}
+.card .profile button {
+  margin-left: 3rem;
+  border: none;
+  padding: 0.5rem;
+  background-color: hsl(212deg, 23%, 69%);
+  border-radius: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.share {
+  background-color: hsl(217deg, 19%, 35%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 1.5rem 2rem;
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  width: 340px;
+  bottom: 0;
+}
+.share p {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0;
+}
+.share .icons {
+  display: flex;
+  margin-left: 1rem;
+  gap: 1rem;
+  flex: 1;
+}
+
+.active-state {
+  display: none;
+}
+
+@media (min-width: 990px) {
+  .card {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 0;
+    width: 50em;
+    height: 24em;
+  }
+  .wrapper img {
+    height: 24em;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+  }
+  .text-content {
+    padding: 1.5em;
+  }
+  h1 {
+    font-size: 1.3em;
+    margin-top: 0;
+  }
+  .profile {
+    margin-top: 0;
+  }
+  .share {
+    bottom: 7em;
+    right: 0;
+    width: max-content;
+    border-radius: 10px;
+  }
+  .triangle {
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid hsl(217deg, 19%, 35%);
+    position: absolute;
+    top: 4.6em;
+    left: 8.5em;
+  }
+}
