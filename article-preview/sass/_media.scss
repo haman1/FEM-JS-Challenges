@@ -1,0 +1,47 @@
+@media(min-width:990px){
+    .card{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-top: 0;
+        width: 50em;
+        height: 24em;
+    }
+    .wrapper {
+        img{
+            height: 24em;
+            border-radius: 10px 0 0 10px;
+            object-fit: cover;
+        }
+       
+    }
+    .text-content{
+        padding: 1.5em;
+    }
+    h1{
+        font-size: 1.3em;
+        margin-top: 0;
+    }
+    .profile{
+        margin-top: 0;
+    }
+    .share{
+        bottom:7em;
+        right:.0;
+        width: max-content;
+        border-radius: 10px;
+    }
+    // .share-btn-active{
+    //     left:10em;
+    // }
+    .triangle{
+        display:flex;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid $dark-grayish-blue;
+        position: absolute;
+        top:4.6em;
+        left:8.5em;
+    }
+}

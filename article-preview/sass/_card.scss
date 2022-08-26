@@ -1,0 +1,90 @@
+.card{
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem .5rem rgb(201, 187, 187);
+    position: relative;
+    width: 340px;
+
+    .wrapper{
+        img{
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .profile{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+
+        img{
+            width: 40px;
+            border-radius: 50rem;
+        }
+
+        h2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            font-size: 1rem;
+            font-weight: $fw-bold;
+            flex: 1;
+            color: $dark-grayish-blue;
+
+            span{
+                color:$grayish-blue;
+                font-weight: 500;
+            }
+        }
+
+        button{
+            margin-left: 3rem;
+            border: none;
+            padding: .5rem;
+            background-color: $grayish-blue;
+            border-radius: 50rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit: contain;
+            cursor: pointer;
+        }
+
+    }
+   
+}
+
+.share{
+    background-color: $dark-grayish-blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    padding: 1.5rem 2rem;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    width: 340px;
+    bottom: 0;
+
+    p{
+        letter-spacing: .3rem;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 0;
+    }
+
+    .icons{
+        display: flex;
+        margin-left: 1rem;
+        gap: 1rem;
+        flex: 1;
+        
+    }
+   
+}
+.active-state{
+    display: none;
+}
