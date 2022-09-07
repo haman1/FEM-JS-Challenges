@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/styles.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <Main>
+    <div class="text-info">
+      <h1>Learn to code by watching others</h1>
+    <h2>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </h2>
+    </div>
+    
+    
+    <div class="cta">
+        <h3><span>Try it free 7 days</span> then $20/mo. thereafter</h3>
+      
+    <div class="card">
+      <form id="form" action="#">
+        <div class="input">
+          <input id="input-first" type="text" placeholder="First Name" aria-label="enter First Name">
+          <img class="icon" src="/images/icon-error.svg" alt="">
+          <p class="msg">First Name cannot be empty</p>
+        </div>
+       
+        <div class="input">
+          <input id="input-last" type="text" placeholder="Last Name" aria-label="Last Name">
+          <img class="icon" src="/images/icon-error.svg" alt="">
+          <p class="msg">Last Name cannot be empty</p>
+        </div>
+        
+        <div class="input">
+          <input id="input-email" type="email" placeholder="email" aria-label="enter email">
+          <img class="icon" src="/images/icon-error.svg" alt="">
+          <p class="msg">The email address is not valid</p>
+        </div>
+        
+        <div class="input">
+          <input id="input-password" type="password" placeholder="Password" aria-label="enter password">
+          <img class="icon" src="/images/icon-error.svg" alt="">
+          <p class="msg">Password cannot be empty</p>
+        </div>
+        
+        <input id="submit-btn" type="button" value=" Claim your free trial" aria-label="submit">
+      </form>
+     
+    
+      <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
+    </div>
+  </div>
+    
+  </Main>
+  
+
+
+  
+
+  
+  
+  <footer>
+   
+  </footer>
+
+</body>
+  <script src="/js/app.js"></script>
+</html>
