@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* ## Colors
+
+### Primary
+
+ Red: hsl(0, 100%, 74%);
+- Green: hsl(154, 59%, 51%)
+
+### Accent
+
+- Blue: hsl(248, 32%, 49%)
+
+### Neutral
+
+- Dark Blue: hsl(249, 10%, 26%) 
+- Grayish Blue: hsl(246, 25%, 77%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700 */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    color: #fff;
+    text-align: center;
+}
+body{
+    width: 90%;
+    margin: auto;
+    min-height:100vh;
+}
+main{
+  
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    
+}
+.cta{
+    margin-bottom: 3rem;
+}
+h1{
+    font-weight: 700;
+    margin-top: 2rem;
+}
+h2{
+    font-weight:400;
+    font-size: 1rem;
+    padding:1rem 0;
+}
+h3{
+    background-color:hsl(248, 32%, 49%);
+    padding: 1rem 3rem;
+    border-radius:1rem;
+    font-size:.8rem;
+    font-weight: 400;
+    box-shadow: 0 .5rem 0 rgba(0,0,0,0.131);
+}
+span{
+    font-weight:600;
+    font-size:1rem;
+    
+}
+.card{
+    background-color: #fff;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 0 rgba(0, 0, 0, 0.137)
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap:1rem;
+}
+input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+    color:hsl(246, 25%, 77%);
+    font-weight: 700;
+}
+.input{
+    width: 100%;
+    position: relative;
+   
+}
+
+textarea:focus,
+input:focus{
+    outline:none;
+    border-color: hsl(249, 10%, 26%) ;
+    color: hsl(0, 100%, 74%);
+   
+}
+
+.msg{
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    text-align: end;
+    display: none;
+   
+    
+}
+.icon{
+    position:absolute;
+    margin-top: 1rem;
+    right: 1.5rem;
+    opacity: 0;
+}
+
+#submit-btn{
+    background-color: hsl(154, 59%, 51%);
+    color:#fff;
+    border: none;
+    padding:1rem 0;
+    font-size:1rem;
+    text-transform: uppercase;
+    box-shadow: 0 .2rem 0 hsl(154, 68%, 41%);
+    
+}
+#submit-btn:hover{
+        cursor: pointer;
+        opacity:.7;
+}
+p{
+    color:hsl(246, 25%, 77%);
+    font-size:.8rem;
+    padding: 1rem 0;
+}
+p a{
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.error input{
+    border:2px solid hsl(0, 100%, 74%);
+}
+
+.error input:focus{
+    color:hsl(0, 100%, 74%);
+}
+
+.error .icon {
+    opacity:1;
+}
+
+.error .msg {
+    display:block;
+}
+
+@media (min-width:990px){
+    main{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        width: 80%;
+        min-height: 100vh;
+        justify-content: center;
+        margin:2rem auto;
+    }
+    .info{
+        grid-column: 1/2;
+        text-align: start;
+    }
+    .cta{
+        grid-column:2/3;
+    }
+    h1{
+        font-size:3rem;
+        margin-top:0;
+    }
+}
