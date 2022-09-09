@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+/* 
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700 */ 
+
+*{
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:hsl(216, 12%, 8%);
+    
+}
+body{
+    max-width: 375px;
+    min-width: 375px;
+    margin: auto;
+    position: relative;
+}
+.container{
+    margin-top: 8rem;
+    padding:2rem;
+    background-color:hsl(213, 19%, 18%);
+    border-radius:10px;
+    margin-bottom: 15rem;
+}
+.badge img{
+    background-color:hsl(216, 12%, 8%);
+    /* border:2px solid hsl(216, 12%, 54%); */
+    padding: .5rem;
+    border-radius:30rem;
+}
+
+h1{
+    color:  hsl(0, 0%, 100%);
+    margin: 1.2rem 0;
+    font-weight: 400;
+}
+
+p{
+    color:  hsl(217, 12%, 63%);
+}
+
+.ratings{
+    display: flex;
+    list-style: none;
+    gap:1.2rem;
+    margin: 1.5rem 0;
+}
+a{
+    background-color: hsl(213, 18%, 12%);
+    padding:1rem;
+    border-radius:20rem;  
+    text-decoration:none;
+    color:hsl(216, 12%, 54%);
+
+   
+}
+
+a:hover{
+    background-color: hsl(217, 12%, 63%);
+    cursor: pointer;
+    color:#fff;
+}
+
+a:focus{
+  background-color: hsl(25, 97%, 53%);
+      
+}
+.submit-btn{
+    width: 90%;
+    background-color: hsl(25, 97%, 53%);
+    padding: .8rem;
+    margin: 0 .8rem;
+    border: none;
+    border-radius:30rem;
+    color:#fff;
+    text-transform: uppercase;
+
+    
+  
+}
+.submit-btn:hover{
+        cursor: pointer;
+        background-color:#fff;
+        color:hsl(25, 97%, 53%);
+
+
+}
+
+
+.thankyou{
+    background-color:hsl(213, 19%, 18%);
+    padding: 2rem;
+    border-radius: 10px;
+    position:absolute;
+    top:0;
+    /* display: none; */
+    margin-bottom: 15rem;
+    margin-top:5rem;
+}
+.hidden{
+    display: none;
+}
+
+.thankyou img{
+    margin:0 4rem;
+    margin-bottom: 2.3rem;
+}
+.thankyou h1{
+    margin: 1.2rem 4.5rem;
+}
+.input{
+    color: hsl(25, 97%, 53%);
+    background-color:hsl(240, 1%, 28%);
+    margin:0 2.5rem;
+    padding: .8rem;
+    border-radius:100rem;
+    width: 80%;
+    border: none;
+    font-size: 1rem;
+}
