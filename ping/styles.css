@@ -1,0 +1,183 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Blue: hsl(223, 87%, 63%)
+
+### Secondary
+
+- Pale Blue: hsl(223, 100%, 88%)
+- Light Red: hsl(354, 100%, 66%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 59%)
+- Very Dark Blue: hsl(209, 33%, 12%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 20px
+
+### Fonts
+
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+
+*{
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color:#fff;
+    
+}
+body{
+    max-width: 375px;
+    min-width: 375px;
+    margin: auto;
+    min-height:100vh;
+}
+/* main{
+    padding: 2rem;
+} */
+
+.subscribe{
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.wrapper img{
+    margin-bottom: 2rem;
+    width:20%;
+}
+
+h1{
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+.launch{
+    color: hsl(0, 0%, 59%);
+    font-size: 1.5rem;
+    font-weight:300;
+    
+}
+.info p{
+    margin-bottom: 1.5rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin:0 2rem;
+    width:80%;
+    gap:.5rem;
+}
+#email{
+    padding: .6rem;
+    border-radius:50rem;
+    border: 1px solid   hsl(223, 96%, 82%);
+    width: 90%;
+    margin-bottom: .8rem;
+}
+h2{
+    color : hsl(354, 100%, 66%);
+    font-size: .7rem;
+    font-weight:400;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+#submit-btn{
+    width:90%;
+    padding: .6rem;
+    background-color:hsl(223, 87%, 63%);
+    border: none;
+    border-radius: 20rem;
+    color:#fff;
+    font-weight: 600;
+    font-size: .8rem;
+    box-shadow: 2px 3px 2px 0px hsl(223, 87%, 63%);
+    margin-bottom: 2rem;
+}
+#submit-btn:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.dashboard img{
+    width:100%;
+    margin-bottom: 8rem;
+}
+.icons{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:1.2rem;
+    margin-bottom: 3rem;
+    color:hsl(223, 87%, 63%) ;
+   
+}
+i:hover{
+    transform: scale(1.5, 1.5);
+    /* padding:1rem .8rem; */
+    cursor: pointer;
+    color:hsl(223, 87%, 63%) ;
+    border-radius: 20rem;
+}
+
+
+.copy{
+    color:hsl(0, 0%, 59%);
+    font-size: .8rem;
+    text-align:center;
+    margin-bottom: 2rem;
+}
+
+.error h2{
+    display: block;
+}
+
+.error #email{
+    border-color:hsl(0, 100%, 74%);
+}
+
+
+
+@media(min-width: 768px){
+    html{
+        font-size:100%;
+    }
+
+    body{
+        max-width:60%;
+        margin: auto;
+        min-height:100vh;
+    }
+
+  
+}
