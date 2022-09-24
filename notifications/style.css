@@ -1,0 +1,163 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
+- Weights: 500, 800 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size:115%;
+}
+body{
+    max-width: 90%;
+    min-width: 640px;
+    margin: 2rem 10%;
+  
+    line-height: 1.7rem;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size:1.2rem;
+    color:hsl(224, 21%, 14%);
+    margin-bottom:2rem;
+}
+header span{
+    margin-left: 1rem;
+    border: 2px solid hsl(219, 85%, 26%);
+    padding:0 1rem;
+    background-color:hsl(219, 85%, 26%);
+    color:#fff;
+    border-radius:10px;
+}
+#mark{
+    font-size:1.2rem;
+}
+#mark:hover{
+    color:hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+span:hover{
+    color:hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap:1.3rem;
+    margin-bottom:2rem;
+    
+}
+
+.unread{
+    height: .5rem;
+    width: .5rem;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    position: absolute;
+    margin: .6rem;
+  
+}
+.content-desc{
+    position: relative;
+}
+.image-wrapper img{
+    width: 80%;
+}
+.hidden{
+    display:none;
+}
+.message{
+   
+    margin-left: 3rem;
+    margin-top: 1rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 1.5rem;
+    width: 70%;
+    border-radius: 12px;
+}
+.message:hover{
+    background-color:hsl(211, 68%, 94%);
+    cursor: pointer;
+}
+.main{
+    margin-left: 2.3rem;
+}
+.comment{
+    display:flex;
+    align-items:center;
+}
+
+.comment img{
+    width: 18%;
+    /* margin-top: 20%; */
+    margin-left: 20%;
+}
+main p{
+    color:hsl(219, 12%, 42%);
+    width: 80%;
+}
+span{
+    color:hsl(224, 21%, 14%);
+    font-weight:800;
+}
+.info{
+    color:hsl(219, 12%, 42%);
+}
+.chess{
+    color: hsl(219, 85%, 26%)
+}
+.image-wrapper .riz {
+    width: 180%;
+}
+
+@media (min-width:1040px){
+    html{
+        font-size: 130%;
+    }
+    body{
+        max-width:90%;
+        margin: 0 15%;
+    }
+    .comment img{
+        margin-left: 15%;
+    }
+}
