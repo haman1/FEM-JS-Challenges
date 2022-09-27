@@ -1,0 +1,233 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Very light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (form inputs): 24px
+
+### Font
+
+- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
+- Weights: 700 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    background-color:  hsl(185, 41%, 84%);
+    max-width: 375px;
+    min-width: 375px;
+    margin:2rem auto;
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+h1{
+    text-align: center;
+    line-height:2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+h2{
+    font-size:.6rem;
+    font-weight:300;
+    color: hsl(184, 14%, 56%);
+    margin-bottom: 1rem;
+}
+
+.card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding:1.5rem;
+}
+.dollar{
+    background-color: hsl(185, 41%, 84%);
+    padding: .5rem;
+    border-radius: 5px;
+}
+.dollar:hover{
+    box-shadow: inset 0 0 0 3px hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+.dollar input{
+    background-color:  hsl(189, 41%, 97%);
+    margin-left: 12rem;
+    width: 5rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    color:hsl(183, 100%, 15%) ;
+    font-weight: 700;
+}
+
+input{
+    padding: .3rem 0;
+    border-radius: 5px;
+    border:none ;
+}
+.tip-percentages{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap:1rem;
+    margin-bottom: 2rem;
+}
+
+.tip-percentages .tip-btn{
+   width: 100%;
+   background-color:  hsl(183, 100%, 15%);
+   color: #fff;
+   font-weight: 700;
+   font-size: .8rem;
+   padding: .8rem 0;
+   text-align: center;
+}
+.tip-percentages .tip-btn:hover{
+    background-color:rgb(157, 243, 214);
+ }
+ .tip-percentages .tip-btn:focus{
+    background-color:hsl(172, 83%, 38%);
+ }
+
+
+.custom {
+    background-color: hsl(185, 41%, 84%);
+    color:hsl(183, 100%, 15%);
+    text-align: center;
+}
+.custom:hover{
+    box-shadow: inset 0 0 0 3px hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+.people input{
+    background-color:  hsl(189, 41%, 97%);
+    margin-left: 12rem;
+    width: 5rem;
+    padding: .5rem;
+    color:hsl(183, 100%, 15%) ;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.people{
+    background-color:  hsl(185, 41%, 84%);
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.error-msg {
+    color: indianred;
+    font-weight: 700;
+    font-size: .6rem;
+    opacity: 1;
+  }
+.tip-percentages .btn-active {
+    background-color: #26c0ab;
+    
+}
+
+.calc{
+    background-color:  hsl(183, 100%, 15%);
+    color: #fff;
+    padding: 1rem;
+    border-radius:10px;
+    font-size:.6rem;
+}
+.tip{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    margin-bottom: 1rem;
+    
+}
+.tip input{
+    font-size: .7rem;
+    color:hsl(183, 100%, 15%) ;
+    font-weight: 900;
+    color: hsl(172, 67%, 45%);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.total{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.total input{
+    font-size: .7rem;
+    color:hsl(183, 100%, 15%) ;
+    font-weight: 900;
+    color: hsl(172, 67%, 45%);
+}
+button{
+    width: 100%;
+    padding: .5rem;
+    background-color:  hsl(172, 67%, 45%);
+    margin-top:2rem;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:rgb(157, 243, 214);
+}
+.calc input{
+    background-color:hsl(183, 100%, 15%);
+    text-align:end;
+   font-size:.8rem;
+}
+
+span{
+    color: hsl(184, 14%, 56%);
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+@media (min-width: 1024px){
+    html{
+        font-size: 1.2rem;
+    }
+    body{
+        max-width: 40rem;
+        max-height: 30rem;
+    }
+    .card{
+        display: flex;
+        gap: 1.5rem;
+        
+    }
+}
